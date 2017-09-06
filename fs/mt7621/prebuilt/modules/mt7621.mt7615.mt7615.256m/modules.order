@@ -1,0 +1,2 @@
+kernel/drivers/usb/host/xhci-hcd.ko
+kernel/net/nat/hw_nat/hw_nat.ko

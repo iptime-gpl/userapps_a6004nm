@@ -1,0 +1,1 @@
+clones/a6004nm/clone_info.mk
