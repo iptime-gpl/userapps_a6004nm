@@ -17,7 +17,7 @@ RANLIB=${ToolChainPrefix}ranlib
 CFLAGS="-mcpu=cortex-a7 -O2 -fomit-frame-pointer -pipe -Os"
 
 rm -f configure
-cvs  update  configure
+tar xf configure.tar
 
 env CC=$CC \
 env CFLAGS="$CFLAGS" \
@@ -26,7 +26,4 @@ env LIBNFNETLINK_LIBS="-L${USERAPPS_ROOT}/netfilter-q/libnfnetlink-1.0.1/src/.li
 env LIBMNL_CFLAGS="-I${USERAPPS_ROOT}/netfilter-q/libmnl-1.0.4/include" \
 env LIBMNL_LIBS="-L${USERAPPS_ROOT}/netfilter-q/libmnl-1.0.4/src/.libs" \
 ./configure  --host=arm-linux --target=arm-linux --build=i686-pc-linux
-
-rm -f aclocal.m4
-cvs  update aclocal.m4
 
